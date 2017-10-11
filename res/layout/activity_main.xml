@@ -1,0 +1,127 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout"
+    >
+    
+	<TextView
+    android:id="@+id/vendor"
+    android:layout_gravity="start"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="16sp"
+    android:layout_weight="1"
+    android:background="#88FF4500"
+    />
+	
+	<TextView
+    android:id="@+id/sensor_name"
+    android:layout_gravity="start"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="16sp"
+    android:layout_weight="1"
+    android:background="#88FF4500"
+    />
+    
+	<TextView
+    android:id="@+id/sensor_accuracy"
+    android:layout_gravity="start"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="16sp"
+    android:layout_weight="1"
+    android:background="#88FF4500"
+    />
+	
+	<TextView
+	android:id="@+id/TextView01"
+    android:layout_gravity="start"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"	
+    android:background="#88FF4500"
+    android:layout_weight="0.5"
+    android:textSize="16sp"
+    />
+	
+	<TextView
+	android:id="@+id/TextView02"
+    android:layout_gravity="start"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"	
+    android:background="#88FF4500"
+    android:layout_weight="0.5"
+    android:textSize="16sp"
+    />
+	
+	<Button
+	android:text="start saving"
+	android:id="@+id/startdata"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#88AA4300"
+    android:onClick="onButton2Clicked"
+    android:layout_weight="1"
+    />
+		
+	<Button
+	android:text="finish saving"
+	android:id="@+id/savedata"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#88AA4300"
+    android:onClick="onButton1Clicked"
+    android:layout_weight="1"
+    />
+	
+
+	
+<TableLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1" 
+    android:background="#8800BFFF"
+    android:layout_weight="7"
+    >
+    
+<TableRow>
+    <TextView
+        android:text="xval:"
+        android:textSize="24sp"
+        android:padding="10sp"/>
+    <TextView
+        android:id="@+id/xvalue"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="10sp" />
+</TableRow>    
+
+<TableRow>
+    <TextView
+        android:text="yval:"
+        android:textSize="24sp"
+        android:padding="10sp"/>
+    <TextView
+        android:id="@+id/yvalue"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="10sp" />
+</TableRow>    
+
+<TableRow>
+    <TextView
+        android:text="zval:"
+        android:textSize="24sp"
+        android:padding="10sp"/>
+    <TextView
+        android:id="@+id/zvalue"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="10sp" />
+</TableRow>    
+        
+</TableLayout>
+
+</LinearLayout>   
